@@ -1,0 +1,20 @@
+---
+interface Props {
+	gradient?: boolean
+}
+
+const { gradient } = Astro.props
+---
+
+<h1 class={`inline font-bold text-white [line-height:1.2] text-4xl xl:text-5xl ${gradient && 'gradient'}`}>
+	<slot />
+</h1>
+
+<style>
+h1.gradient {
+	background-image: linear-gradient(rgb(255, 202, 21) 25%, rgb(250, 112, 154) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+</style>

@@ -1,0 +1,23 @@
+---
+import Container from '../Container.astro';
+import LooperBG from '../Looper.astro';
+import Subtitle from '../Subtitle.astro';
+import Title from '../Title.astro';
+---
+<Container>
+	<section class='px-3 max-w-7xl flex items-center justify-between relative h-[calc(100vh-64px)] w-11/12 md:h-[calc(84vh-76px)] md:mx-auto md:w-11/12 '>
+		<div class="relative flex items-center mx-5 flex-wrap w-full md:mx-3">
+			<div class="w-full md:w-3/5">
+				<Title>Hi, I'm Ricardo Castro,</Title>
+				<Title gradient>Full Stack</Title>
+				<Title>Web Developer.</Title>
+				<Subtitle>I do what I love, I love developing, and I create solutions.</Subtitle>
+			</div>
+			<div class="my-3 w-full flex">
+				<a href='/ricardocastro.pdf' class="w-full rounded-full p-2 text-center hover:cursor-pointer hover:bg-primary bg-primary/90" target="_blank" rel="noreferrer">View CV</a>
+			</div>
+		</div>
+
+		<LooperBG className='absolute [transform:translate(10%,5%)] -z-10' />
+	</section>
+</Container>
