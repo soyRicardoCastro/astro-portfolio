@@ -115,7 +115,7 @@ const SOCIAL_NETWORKS_LINKS = [
 		width: 100%;
 		height: 0;
 		z-index: -10;
-		overflow: hidden;
+		overflow-y: hidden;
 		opacity: 0;
 	}
 
@@ -130,19 +130,18 @@ const SOCIAL_NETWORKS_LINKS = [
 	.mobile-menu ul {
 		background: rgb(0 0 0 / 0.6);
 		backdrop-filter: saturate(180%) blur(16px);
-		padding: 1rem 1.5rem;
-		overflow-y: scroll;
+		padding: 2.5rem 1.5rem;
 		max-height: 100%;
 		line-height: 1;
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
-		max-width: 350px;
 		margin: 0 auto;
 	}
 
 	.mobile-menu ul li {
 		display: flex;
+		max-width: 350px;
 		align-items: center;
 		padding-bottom: 0.75rem;
 		font-size: 1rem;
