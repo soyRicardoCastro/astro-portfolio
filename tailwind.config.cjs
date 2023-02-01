@@ -10,7 +10,7 @@ module.exports = withAnimations({
 				primary: '#FFD200'
 			},
 			sans: {
-				fontFamily: ['Inter', ...defaultTheme.fontFamily.sans]
+				fontFamily: ['Zilla Slab', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},
